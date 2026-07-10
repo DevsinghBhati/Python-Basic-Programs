@@ -1,9 +1,7 @@
 import json
-try:
-    with open("contact-book.json", "r") as file:
-        data = json.load(file)
-except FileNotFoundError:
-    data = {}
+with open("contact-book.json", "r") as file:
+    data = json.load(file)
+
 
 def add_contact(name, contact):
     if name in data or contact in data.values():
@@ -27,11 +25,8 @@ def delete_contact(contact):
 
 while True:
     print("\n1. ADD contact\n2. View contacts\n3. Delete contacts\n4. EXIT")
-    try:
-        choice = int(input("Enter Your Choice: "))
-    except ValueError:
-        print("Please enter a valid number.")
-        continue
+
+    choice = int(input("Enter Your Choice: "))
 
     if choice == 1:
         while True:
@@ -54,11 +49,8 @@ while True:
             print(f"{name} : {number}")
             
     elif choice == 3:
-        try:
-            contact = int(input("Enter the PHONE NUMBER to delete: "))
-            delete_contact(contact)
-        except ValueError:
-            print("Invalid phone number format.")
+        contact = int(input("Enter the PHONE NUMBER to delete: "))
+        delete_contact(contact)
             
     elif choice == 4:
         print("\nExiting...")

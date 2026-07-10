@@ -6,7 +6,6 @@ with open("to-do-list.txt",'r') as file:
 def add_task():
     task = print("What task ? : ")
     data.append(task)
-
 def view_list():
     for index, task in enumerate(data, start=1):
         print(f"{index}. {task}")
