@@ -1,0 +1,22 @@
+{
+    "MATHS": {
+        "status": "Issued",
+        "issue_date": "2026-07-11"
+    },
+    "PYTHON": {
+        "status": "Available",
+        "issue_date": null
+    },
+    "C": {
+        "status": "Available",
+        "issue_date": null
+    },
+    "JAVA": {
+        "status": "Available",
+        "issue_date": null
+    },
+    "C++": {
+        "status": "Available",
+        "issue_date": null
+    }
+}

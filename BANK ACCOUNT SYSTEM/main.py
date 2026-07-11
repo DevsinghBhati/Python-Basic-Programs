@@ -23,7 +23,6 @@ class bank:
         print(f"Your initial bank balance is now {balance}")
 
         str_acc_num = str(account_number)
-
         total_dict[str_acc_num] = {
             "Account Number": int(account_number),
             "PIN": pin,
